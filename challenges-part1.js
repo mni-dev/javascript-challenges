@@ -27,7 +27,7 @@ while (i <= 5) {
 
                         // Traffic-light signals 
 
-/* var signal = ['red', 'yellow', 'green'];
+var signal = ['red', 'yellow', 'green'];
 var i = 0;
 while (i <= 2){
     if(signal[i] == 'red'){
@@ -76,4 +76,4 @@ while(i <= 10){
         console.log(joinSupportSession);
     }
     i++;
-} */
+}
