@@ -41,6 +41,14 @@ const myAge = 35;
 ifEvenOrOdd(myAge);
 console.log(ifEvenOrOdd());
 
+//Find ODD NUM from 50 to 80
+for(i = 50; i<=80; i++){
+    let odd = i;
+    if( odd % 2 != 0){
+        console.log(odd);
+    }
+}
+
 //Finding Minutes from Hours
 function giveMinutes(hours){
     const minutes = hours * 60;

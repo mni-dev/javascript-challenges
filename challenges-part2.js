@@ -31,14 +31,14 @@ let hisNumber = 100;
 console.log(findSquare(hisNumber)); */
 
 //b) square of the numbers in an array
-var multipliedNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+/* var multipliedNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 function findSquare(){
    for(i = 0; i < multipliedNumber.length; i++){
        var squareResult = multipliedNumber[i];
        console.log(squareResult * squareResult);
    }
 } 
-findSquare();
+findSquare(); */
 
                     // Convert names to lowrcase using function
 
