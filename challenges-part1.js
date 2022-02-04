@@ -27,7 +27,7 @@ while (i <= 5) {
 
                         // Traffic-light signals 
 
-var signal = ['red', 'yellow', 'green'];
+/* var signal = ['red', 'yellow', 'green'];
 var i = 0;
 while (i <= 2){
     if(signal[i] == 'red'){
@@ -40,12 +40,12 @@ while (i <= 2){
         console.log('Drive and chill.');
     }
     i++;
-}
+} */
 
 
                         //Loggin out Daily work 10 times with Loops 
 //a) using for loop
-let dailyTasks = [
+/* let dailyTasks = [
     'Unlock module at 8 o\'clock',
     'Watch and practise videos together',
     'Take notes as you watch videos',
@@ -58,10 +58,10 @@ for (i = 1; i <= 10; i++){
     if(amUnableToUnderstand == true){
         console.log(joinSupportSession);
     }
-}
+} */
 
 //b) using while loop
-let dailyTasks = [
+/* let dailyTasks = [
     'Unlock module at 8 o\'clock',
     'Watch and practise videos together',
     'Take notes as you watch videos',
@@ -76,4 +76,4 @@ while(i <= 10){
         console.log(joinSupportSession);
     }
     i++;
-}
+} */

@@ -1,6 +1,6 @@
 //Chanllenge No:-(1) finding smallest number from array
-//trial no. 1
-const givenNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
+//Method 1
+/* const givenNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
  function smallestNum(theSmallest){
     let smallest = theSmallest[0];
     for(let i = 0; i < theSmallest.length; i++){
@@ -13,37 +13,15 @@ const givenNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
 }
 const mySmallest = givenNum;
 const result = smallestNum(mySmallest);
-console.log(result); 
+console.log(result);  */
 
 
-//trial no.3
+//Method 2
 /* const arrayNum = [47, 89, 54, 56, 30, 23, 32, 11, 67,]
 const min = Math.min(...arrayNum);
 console.log(min);  */
-   
 
-    
- 
-     
 
- 
-    
-
-//b
- /*const myNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
-function smallestNumber(myNum) {
-    let temp = myNum[0];
-    for (let i = 0; i < myNum.length; i++) {
-    const element = myNum[i];
-    if (element < temp) {
-    temp = element;
-    }
-    }
-    return temp;
-    }
-    const arr = [1, 2, 3, 4, 5];
-    const result = smallestNumber(arr);
-    console.log(result); */
 //Chanllenge No:-(2) finding the smallest of thre numbers
 /* function lowestNum(a, b, c){
     if(a < b && a < c){
