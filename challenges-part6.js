@@ -1,82 +1,85 @@
-//Problem 1: Ana to Vori
+ //Problem 1
 function anaToVori(ana){
-    let bori = ana / 16;
-    /* if(typeof ana != Number){
-        return 'please, input a valid number'
-    } */
-    return bori;    
+    if(typeof ana !='number'){
+        return 'Please, input a valid number';
+    }
+    // 1 vori is equal to 16 ana
+    vori = ana / 16;
+    return vori;    
 }
-const voriCount = anaToVori(50);
+const voriCount = anaToVori(52);
 console.log(voriCount);
 
-//Problem 2: Panda Cost
-function pandaCost(item1, item2, item3){
-    let singaraPrice = item1 * 7;
-    let samusaPrice = item2 * 10;
-    let gilapiPrice = item3 * 15;
-    let totalPay = singaraPrice + samusaPrice + gilapiPrice;
-    return totalPay;
+//Problem 2
+function pandaCost(singara, samusa, gilapi){
+    if(typeof (singara, samusa, gilapi) != 'number'){
+        return 'Please, input valid numbers'
+    }
+    /* 
+    singara per piece = 7;
+    samusa per piece = 10;
+    gilapi per piece = 15;
+    */
+     singaraPrice = singara * 7;
+     samusaPrice = samusa * 10;
+     gilapiPrice = gilapi * 15;
+     totalPay = singaraPrice + samusaPrice + gilapiPrice;
+     return totalPay;
 }
-const payToPanda = pandaCost(3, 5, 5);
+const payToPanda = pandaCost(5, 10, 20);
 console.log(payToPanda);
 
-//Problem 3: Picnic Budget
+//Problem 3
 function picnicBudget(participants){
+    if(typeof participants != 'number'){
+        return 'Please, give a number'
+    }
     if(participants <=100){
-        let perHeadPay = 5000;
-        totalPay = participants * perHeadPay;
+        //Per head pay upto 100 = 5000;
+        totalPay = 5000 * participants;
         return totalPay;
     }
     else if(participants > 100 && participants <=200){
-        let first100PerHeadPay = 5000;
-        first100totalPay = first100PerHeadPay * 100;
-        let hundredPlusPerHeadPay = 4000;
-        hundredPlustotalPay = hundredPlusPerHeadPay * (participants -100);
-        totalPay = first100totalPay + hundredPlustotalPay;
+        first100TotalPay =  5000 * 100;
+        //Per head pay above 100 = 4000;
+        second100TotalPay = 4000 * (participants -100);
+        TotalPay = first100TotalPay + second100TotalPay; 
         return totalPay;
     }
     else if(participants > 200){
-        let first100PerHeadPay = 5000;
-        first100totalPay = first100PerHeadPay * 100;
-        let second100PerHeadPay = 4000;
-        second100totalPay = second100PerHeadPay * 100;
-        restPerHeadCost = 3000;
-        totalPay =first100totalPay + second100totalPay + (3000 *(participants-200));
+        first200TotalPay = (5000 * 100) + (4000 * 100);
+        //Per head pay above 200 perticipants = 3000;
+        totalPay =first200TotalPay + (3000 *(participants-200));
         return totalPay;
     }
 }
-const picnicBudgetTotal = picnicBudget(250);
+const picnicBudgetTotal = picnicBudget(300);
 console.log(picnicBudgetTotal);
 
-//Problem 4: OddFriend
+//Problem 4
 function oddFriend(friendName){
-    let oddCharName;
+    // console.log(typeof friendName);
+    let oddCharName; //will take the first odd-character name
     for(i = 0; i<friendName.length; i++){
         if((friendName[i].length) % 2 != 0){
             oddCharName = friendName[i];
-            break;
+            break; //stops code iteration if condition meets.
         }
     }
     return oddCharName;
 }
 let myFriends = [
-    'Abdul Wafi',
+    'Abdul Bari',
     'Ridwanul Islam',
-    'Abbas Uddin',
+    'Al Ameen',
     'Mohammad Sufian',
+    'Abbas Uddin',
     'Kamrul Islam',
     'Mohammad Saifuddin'
 ]
 const friends = oddFriend(myFriends);
 console.log(friends);
 
-/* const friends = oddFriend(myFriends);
-console.log(friends);
-function oddFriend(friendName){
-    let oddCharName;
-    for(i = 0; i<friendName.length; i++){
-    }
-}
-const friends = oddFriend(myFriends);
-console.log(friends); */
+
+
 
