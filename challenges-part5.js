@@ -1,6 +1,6 @@
 //Chanllenge No:-(1) finding smallest number from array
 //Method 1
-/* const givenNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
+const givenNum = [78, 45, 58, 94, 20, 68, 78, 11 , 36];
  function smallestNum(theSmallest){
     let smallest = theSmallest[0];
     for(let i = 0; i < theSmallest.length; i++){
@@ -13,7 +13,7 @@
 }
 const mySmallest = givenNum;
 const result = smallestNum(mySmallest);
-console.log(result);  */
+console.log(result); 
 
 
 //Method 2
